@@ -8,7 +8,17 @@
     "dist": "yarn compile && electron-builder",
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
+  "electronWebpack": {
+    "renderer": {
+      "webpackConfig": "webpack.renderer.js"
+    }
+  },
   "dependencies": {
+    "@babel/preset-react": "^7.12.5",
+    "@reduxjs/toolkit": "^1.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
     "source-map-support": "^0.5.16"
   },
   "devDependencies": {
